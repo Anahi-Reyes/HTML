@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roseta Bakery</title>
+</head>
+<body style="background-color: #f7eaf2;">
+    <header>
+        <h1>♥ Tenemos el pastel pefecto para ti ♥</h1>
+    </header>
+
+    <section>
+        <p>Para realizar tu pedido, por favor, llena el sigueinte formulario.</p>
+            <form action="/accion.js" id="Pedido" name="Pedido" method="post">
+                <h2>Información de contacto</h2>
+                    <label for="nombre">Nombre(s):</label>
+                    <input type="text" id="nombre" name="nombre" style="width: 200px;"><br><br>
+                    <label for="apellido">Apellido(s):</label>
+                    <input type="text" id="apellido" name="apellido" style="width: 200px;"><br><br>
+                    <label for="tel1">Teléfono:</label>
+                    <input type="tel" id="teléfono" name="teléfono" maxlength="10" style="width: 90px;"><br><br>
+                    <label for="correo1">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" style="width: 200px;"><br>
+                
+                <h2>Detalles del pedido</h2>
+                    <h3>Tipo de pastel</h3>
+                    <label for="Tipo de pastel">Selecciona un tipo de pastel:</label>
+                    <input list="Tipo de pastel:">
+                        <datalist id="Tipo de pastel:">
+                            <option value="Sencillo">
+                            <option value="Doble">
+                            <option value="Venti">
+                        </datalist>
+
+                    <h3>Sabores</h3>
+                    <p>Selecciona el sabor o sabores que deseas para tú pastel:</p>
+                    <input type="checkbox" id="sabor1" name="sabor1" value="Red Velvet">
+                        <label for="sabor1">Red Velvet</label><br>
+                        <input type="checkbox" id="sabor2" name="sabor2" value="Chocolate">
+                        <label for="sabor2">Chocolate</label><br>
+                        <input type="checkbox" id="sabor3" name="sabor3" value="Vainilla">
+                        <label for="sabor3">Vainilla</label><br>
+                        <input type="checkbox" id="sabor4" name="sabor4" value="Limón">
+                        <label for="sabor4">Limón</label><br>
+                        <input type="checkbox" id="sabor5" name="sabor5" value="Zanahoria">
+                        <label for="sabor5">Zanahoria</label><br>
+
+                    <h3>Decoraciones</h3>
+                        <p>Podemos generar todas las combinaciones que desees:</p>
+                        <input type="checkbox" id="adorno1" name="adorno1" value="Decoraciones 3D">
+                        <label for="adorno1">Decoraciones 3D</label><br>
+                        <input type="checkbox" id="adorno2" name="adorno2" value="Decoraciones florales">
+                        <label for="adorno2">Decoraciones florales</label><br>
+                        <input type="checkbox" id="adorno3" name="adorno3" value="Decoración tipo espejo">
+                        <label for="adorno3">Decoración tipo espejo</label><br>
+
+                    <h3>Ocasión</h3> 
+                        <label for="ocasión">Ocasión:</label>
+                        <input list="ocasión:">
+                         <datalist id="ocasión:">
+                             <option value="Cumpleaños">
+                             <option value="Bautizo">
+                             <option value="Primera Comunión">
+                             <option value="Quince Años">
+                             <option value="Boda">
+                             <option value="Otro">
+                         </datalist>
+
+                    <h3>Fecha de entrega</h3>
+                        <label for="Fecha de entrega"> Fecha de entrega:</label>
+                        <input type="datetime-local" id="Fecha de entrega" name="Fecha de entrega"><br><br>
+
+                    <h3>Dirección de entrega</h3>  
+                         <label for="Dirección de entrega">Dirección de entrega:</label>
+                         <input type="text" id="Dirección de entrega" name="Dirección de entrega">
+
+                    <h3>Descripción</h3>
+                         <p>Por favor, detalla las características del pastel. Incluye toda la información que consideres relevante:</p>
+                         <input type="text" id="descripción" name="descripción" style="width: 350px;"><br><br>  
+
+                    <input type="button" value="♥ Enviar orden ♥" style="width:160px; height:40px; color: white; 
+                         background-color: #c2097b" onclick="alert('¡Resivimos tu orden!');"><br> 
+                      
+            </form>
+    </section>
+    
+    
+</body>
+</html>
